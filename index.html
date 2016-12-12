@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hangman by Ben Cheng (2016)</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/bootstraptheme.css">
+		<link rel="stylesheet" href="css/grayscale.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<script src="javascript/gamelogic.js"></script>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<img id="hangman1" src="images/hangman1.jpg" style="width:80%;float:right">
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5" id="maindisplay">
+			<br id="break1"><br id="break2"><br id="break3">
+			<img id="hangmantitle" src="images/hangmantitle.jpe" style="width:100%">
+			<br id="break4"><br id="break5">
+			<p id="theme">Theme: Titles of Queen Songs</p>
+			
+			<h1 id="line1"></h1>
+			<h1 id="line2"></h1>
+			<p id="line3" style="font-size:16px;text-align:center"></p>
+			<button class="btn btn-default" style="width:50%;margin:25%;text-align:center" id="start" onclick=startgame()>Click to Start Game</button>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+			<br id="break6"><br id="break7">
+			<img id="queen" src="images/Queen.jpg" style="width: 70%">
+			<img id="blood1" src="images/Blood1.gif" style="width:70%">
+			<button class="btn btn-default" style="width:50%;margin:25%;display:none;text-align:center" id="startagain" onclick=startagain()>Click to Try Again</div>
+			</button>
+		</div>
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+			<h1 id="initialdisplay"></h1>
+		</div>
+		<div class="row">
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+			</div>
+			<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+				<br>
+				<h2 id="lettersguessed"></h2>
+				<h2 id="guessesleft"></h2>
+				<audio src="images/mariodie.mp3" id="mariodie"></audio>
+				<audio src="images/mariocoin.mp3" id="mariocoin"></audio>
+				<audio src="images/sadtrombone.mp3" id="sadtrombone"></audio>
+				<audio src="images/Fart.mp3" id="fart"></audio>
+				<audio src="images/champs.mp3" id="champs"></audio>
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+				<br>
+			</div>
+		</div>
+	</div>
+	</body>
+	</html>
+
+	<!-- Last updated 09/30/2016 at 1:03am -->
